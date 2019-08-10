@@ -4,11 +4,8 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.os.Vibrator;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,12 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
-
-import android.support.v7.app.AppCompatActivity;
-
 import static android.content.Context.MODE_PRIVATE;
-import static android.content.Context.VIBRATOR_SERVICE;
 
 public class CartaAdaptador extends RecyclerView.Adapter<CartaAdaptador.CartaViewHolder> {
     public ArrayList<Carta> cartaLista;
@@ -104,10 +96,6 @@ public class CartaAdaptador extends RecyclerView.Adapter<CartaAdaptador.CartaVie
                                 ((card14.equals(card24) & card24.equals(card34)) & card14.equals(card34) | (!card14.equals(card24) & !card24.equals(card34) & !card14.equals(card34)))
                         ) {
                             Toast.makeText(holder.imageView.getContext(), "SET", Toast.LENGTH_SHORT).show();
-
-                            Vibrator vibrator;
-                            vibrator = (Vibrator) holder.contexto.getSystemService(VIBRATOR_SERVICE);
-                            vibrator.vibrate(40);
 
                             SharedPreferences preferences = holder.contexto.getSharedPreferences("SCORE", MODE_PRIVATE);
                             int scoreDb = preferences.getInt("score", 0);

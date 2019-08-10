@@ -1,8 +1,8 @@
 package sgif.com.br.sgif_setgameif;
 
 import android.content.Intent;
-import android.os.Vibrator;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -18,7 +18,6 @@ public class TelaInicial extends AppCompatActivity {
     private Button botaoRanking;
     private Button botaoInstrucoes;
     private ImageView logo;
-    public Vibrator vibrator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +31,6 @@ public class TelaInicial extends AppCompatActivity {
         botaoRanking = findViewById(R.id.botaoRanking);
         botaoInstrucoes = findViewById(R.id.botaoInstrucoes);
         logo = findViewById(R.id.logo);
-        vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
 
         botaoJogar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,7 +77,6 @@ public class TelaInicial extends AppCompatActivity {
             public void onClick(View v) {
                 Animation animation = AnimationUtils.loadAnimation(TelaInicial.this, R.anim.bounce);
                 logo.startAnimation(animation);
-                vibrator.vibrate(40);
             }
         });
     }

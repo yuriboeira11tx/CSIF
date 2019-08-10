@@ -3,7 +3,7 @@ package sgif.com.br.sgif_setgameif;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
@@ -48,6 +48,7 @@ public class ScoreActivity extends AppCompatActivity {
 
         if (!arrayScore.isEmpty()) {
             scoreList.setText(Collections.max(arrayScore).toString());
+
             SharedPreferences.Editor editor = getSharedPreferences("SCORE", MODE_PRIVATE).edit();
             editor.putInt("melhorScore", Collections.max(arrayScore));
             editor.apply();
@@ -58,6 +59,7 @@ public class ScoreActivity extends AppCompatActivity {
 
         Animation animation = AnimationUtils.loadAnimation(ScoreActivity.this, R.anim.blink_anim);
         Animation animationStar = AnimationUtils.loadAnimation(ScoreActivity.this, R.anim.blink_anim);
+
         scoreList.setAnimation(animation);
         imageView.startAnimation(animationStar);
     }

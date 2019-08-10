@@ -41,5 +41,4 @@
         android:textColor="@color/colorPrimaryDark"
         android:fontFamily="casual"
         android:textSize="23sp" />
-
 </RelativeLayout>

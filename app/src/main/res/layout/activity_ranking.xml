@@ -44,7 +44,5 @@
             android:layout_alignParentBottom="true"
             android:layout_marginTop="20dp"
             android:dividerHeight="2dp" />
-
     </RelativeLayout>
-
 </RelativeLayout>

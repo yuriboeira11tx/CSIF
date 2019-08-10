@@ -1,7 +1,7 @@
 package sgif.com.br.sgif_setgameif;
 
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
@@ -20,6 +20,5 @@ public class InstrucoesActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewPager);
         adapter = new SlideAdapter(this);
         viewPager.setAdapter(adapter);
-
     }
 }

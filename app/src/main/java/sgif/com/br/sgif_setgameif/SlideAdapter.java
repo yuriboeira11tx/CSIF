@@ -1,8 +1,8 @@
 package sgif.com.br.sgif_setgameif;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v4.view.PagerAdapter;
+import androidx.annotation.NonNull;
+import androidx.viewpager.widget.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,20 +40,20 @@ public class SlideAdapter extends PagerAdapter {
 
     @Override
     public boolean isViewFromObject(@NonNull View view, @NonNull Object o) {
-        return view == (RelativeLayout) o;
+        return view == o;
     }
 
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
-        inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+        inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         View view = inflater.inflate(R.layout.slide, container, false);
         RelativeLayout relativeLayout = view.findViewById(R.id.slideLayout);
 
-        TextView textView = (TextView) view.findViewById(R.id.textInstrucao);
-        TextView titulo = (TextView) view.findViewById(R.id.textTitulo);
-        ImageView imageView = (ImageView) view.findViewById(R.id.imageInstrucoes);
+        TextView textView = view.findViewById(R.id.textInstrucao);
+        TextView titulo = view.findViewById(R.id.textTitulo);
+        ImageView imageView = view.findViewById(R.id.imageInstrucoes);
 
         textView.setText(instrucoes[position]);
         titulo.setText(titulos[position]);
