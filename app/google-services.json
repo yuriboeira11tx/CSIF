@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "299371214811-g2976iql24rig4r6ubhdib1527kbcvkk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sgif.com.br.sgif_setgameif",
+            "certificate_hash": "9d295469900bd387bda907072e568a8f96bca0dd"
+          }
+        },
+        {
           "client_id": "299371214811-5eo65phiesc93ic68qgtf0me8k2c3sdu.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
