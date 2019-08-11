@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">CSIF - Conjuntos e Sinais IF</string>
 
     <string name="title_activity_tela_inicial">TelaInicial</string>

@@ -1,52 +1,45 @@
 {
   "project_info": {
-    "project_number": "158829913360",
-    "firebase_url": "https://csif-9c89e.firebaseio.com",
-    "project_id": "csif-9c89e",
-    "storage_bucket": "csif-9c89e.appspot.com"
+    "project_number": "299371214811",
+    "firebase_url": "https://csif-ranking.firebaseio.com",
+    "project_id": "csif-ranking",
+    "storage_bucket": "csif-ranking.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:158829913360:android:912003612dd740a9",
+        "mobilesdk_app_id": "1:299371214811:android:912003612dd740a9",
         "android_client_info": {
           "package_name": "sgif.com.br.sgif_setgameif"
         }
       },
       "oauth_client": [
         {
-          "client_id": "158829913360-0f2s6pllp00ur5vcncd6l18bp554qmsu.apps.googleusercontent.com",
+          "client_id": "299371214811-5eo65phiesc93ic68qgtf0me8k2c3sdu.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "sgif.com.br.sgif_setgameif",
-            "certificate_hash": "5faa979735164dc52bd5953eb62c8d343ab98e53"
+            "certificate_hash": "e46801902076b127e24acfb6c1c02023f6549870"
           }
         },
         {
-          "client_id": "158829913360-4mdel3402lhl3ac3kk1m2vvjbd3df7pv.apps.googleusercontent.com",
+          "client_id": "299371214811-hg4df1rhfsfsvmdaup2vna3g4e3iks97.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA9zh44Hqhfos0lInoPDUUHRrSCrMaln2Q"
+          "current_key": "AIzaSyArOQshvNndJwYDCSdWPyKuvkmCLYkhb-4"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "158829913360-4mdel3402lhl3ac3kk1m2vvjbd3df7pv.apps.googleusercontent.com",
+              "client_id": "299371214811-hg4df1rhfsfsvmdaup2vna3g4e3iks97.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }
